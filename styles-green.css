@@ -54,19 +54,17 @@ p {
 .emphasis {
     /*color: #dac554;*/
     /*color: #ccb849;*/
-    color: #ffb347;
+    color: #77dd77;
 }
 
 a {
     text-decoration: none;
     font-weight: 500;
-    color: #e49a33;
+    color: #57b857;
 }
 
 .backed {
-    /*background-color: #ccb849;*/
-    background-color: #ffb347;
-    /*background-color: #77dd77;*/
+    background-color: #77dd77;
 }
 
 .backed * {
