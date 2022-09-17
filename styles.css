@@ -1,0 +1,71 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*font-family: 'Amulya', sans-serif;*/
+    font-family: 'Erode', serif;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 48px;
+    margin: 0 0 0.5em 0;
+}
+
+* {
+    /*font-family: 'Synonym', sans-serif;*/
+    font-family: 'Recia', serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+body {
+    padding: 1em 0;
+    margin: 0;
+}
+
+/*.post {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}*/
+
+p {
+    color: rgb(71, 71, 71);
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section {
+    padding: 1em 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.insection {
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+}
+
+a,
+.emphasis {
+    /*color: #dac554;*/
+    color: #ccb849;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.backed {
+    background-color: #ccb849;
+}
+
+.backed * {
+    color: rgb(255, 255, 255);
+}
