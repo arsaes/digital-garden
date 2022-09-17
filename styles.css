@@ -11,19 +11,19 @@ h6 {
 h1 {
     font-weight: 600;
     font-size: 48px;
-    margin: 0 0 0.5em 0;
+    margin: 1em 0 0.5em 0;
 }
 
 h2 {
     font-weight: 600;
     font-size: 36px;
-    margin: 0.5em 0;
+    margin: 1em 0 0.5em 0;
 }
 
 h3 {
     font-weight: 600;
     font-size: 30px;
-    margin: 0.5em 0;
+    margin: 1em 0 0.5em 0;
 }
 
 * {
@@ -34,14 +34,13 @@ h3 {
 }
 
 body {
-    padding: 1em 0 0 0;
+    padding: 0;
     margin: 0;
 }
 
 p {
     color: rgb(71, 71, 71);
-    margin: 0;
-    margin-bottom: 0.6em;
+    margin: 0.6em 0;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -49,8 +48,7 @@ p {
 .section {
     padding: 1em 10%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .section > * {
@@ -91,6 +89,7 @@ code {
 .codeblock {
     background-color: rgb(71, 71, 71);
     padding: 32px;
+    margin: 24px 0;
     border-radius: 0.2rem;
 }
 
@@ -98,4 +97,5 @@ code {
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: Hack, monospace;
+    margin: 6px 0;
 }
