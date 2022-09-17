@@ -69,3 +69,7 @@ a {
 .backed * {
     color: rgb(255, 255, 255);
 }
+
+.backed p {
+    font-weight: 500;
+}
