@@ -1,3 +1,9 @@
+
+
+/* ----------------------------------------------------------------
+Header formatting
+*/
+
 h1,
 h2,
 h3,
@@ -8,6 +14,15 @@ h6 {
     font-family: 'Erode', serif;
 }
 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #e49a33;
+}
+
 h1,
 h1 a {
     font-weight: 600;
@@ -15,8 +30,8 @@ h1 a {
     margin: 1em 0 0.5em 0;
 }
 
-h2, 
-h2 a{
+h2,
+h2 a {
     font-weight: 600;
     font-size: 36px;
     margin: 40px 0 18px 0;
@@ -28,6 +43,11 @@ h3 a {
     font-size: 30px;
     margin: 40px 0 18px 0;
 }
+
+
+/* ----------------------------------------------------------------
+General formatting
+*/
 
 * {
     /*font-family: 'Synonym', sans-serif;*/
@@ -41,12 +61,28 @@ body {
     margin: 0;
 }
 
-p {
+p,
+ul {
     color: rgb(71, 71, 71);
     margin: 1em 0;
     text-align: justify;
     text-justify: inter-word;
 }
+
+.emphasis {
+    color: #e49a33;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #d18b28;
+}
+
+
+/* ----------------------------------------------------------------
+Section formatting
+*/
 
 .section {
     padding: 1em 10%;
@@ -54,22 +90,17 @@ p {
     justify-content: center;
 }
 
-.section > * {
+.section>* {
     width: 840px;
 }
 
-.emphasis {
-    color: #ffb347;
-}
 
-a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #e49a33;
-}
+/* ----------------------------------------------------------------
+Background formatting
+*/
 
 .backed {
-    background-color: #ffb347;
+    background-color: #e49a33;
 }
 
 .backed * {
@@ -80,13 +111,26 @@ a {
     font-weight: 500;
 }
 
+.gradient {
+    background: rgb(255, 255, 255);
+    /*background: linear-gradient(90deg, rgb(236, 195, 111) 0%, rgb(243, 233, 186) 20%, rgb(247, 241, 227) 40%, rgb(255, 255, 255) 100%); */
+    /*background: linear-gradient(90deg, hsl(40, 77%, 68%) 0%, hsl(40, 70%, 84%) 10%, hsl(40, 56%, 93%) 20%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 70%, hsl(40, 56%, 93%) 80%, hsl(40, 70%, 84%) 90%, hsl(40, 77%, 68%) 100% ); */
+    /*background: linear-gradient(90deg, hsl(40, 77%, 68%) 0%,  hsl(40, 56%, 93%) 20%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%); */
+    background: linear-gradient(90deg, hsl(42, 58%, 89%) 0%, hsl(42, 50%, 95%) 100%);
+}
+
+
+/* ----------------------------------------------------------------
+Code formatting
+*/
+
 code {
-	background-color: rgb(71, 71, 71);
+    background-color: rgb(71, 71, 71);
     color: rgb(255, 255, 255);
-	padding: 4px 8px;
-	border-radius: 0.2rem;
-	font-size: 20px;
-	font-family: Hack, monospace;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    font-size: 20px;
+    font-family: Hack, monospace;
 }
 
 .codeblock {
@@ -101,4 +145,36 @@ code {
     font-size: 20px;
     font-family: Hack, monospace;
     margin: 6px 0;
+}
+
+
+/* ----------------------------------------------------------------
+List formatting
+*/
+
+ul {
+    margin: 0;
+}
+
+ul li {
+    margin: 12px 0;
+}
+
+ul li::marker {
+    content: '🞱 ';
+    font-size: 1.1em;
+    color:#e49a33;
+    margin: 0;
+}
+
+ul ul li::marker {
+    content: '＋ ';
+    font-weight: 800;
+    font-size: 1em;
+}
+
+ul ul ul li::marker {
+    content: '⋅ ';
+    font-weight: 1000;
+    font-size: 1.2em;
 }
