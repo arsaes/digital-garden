@@ -62,7 +62,8 @@ body {
 }
 
 p,
-ul {
+ul,
+ol {
     color: rgb(71, 71, 71);
     margin: 1em 0;
     text-align: justify;
@@ -176,5 +177,37 @@ ul ul li::marker {
 ul ul ul li::marker {
     content: '⋅ ';
     font-weight: 1000;
+    font-size: 1.2em;
+}
+
+ol {
+    margin: 0;
+}
+
+ol li {
+    margin: 12px 0;
+}
+
+ol ol li {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol li {
+    list-style-type: lower-roman;
+}
+
+ol li::marker {
+    color:#e49a33;
+    font-family: 'Erode', serif;
+    font-weight: 800;
+    font-size: 1.4em;
+    
+}
+
+ol ol li::marker {
+    font-size: 1.3em;
+}
+
+ol ol ol li::marker {
     font-size: 1.2em;
 }
